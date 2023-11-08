@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "43481737255",
+    "firebase_url": "https://truckmypup-default-rtdb.firebaseio.com",
+    "project_id": "truckmypup",
+    "storage_bucket": "truckmypup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43481737255:android:53d62349c3d74fff1c8602",
+        "android_client_info": {
+          "package_name": "com.example.truckmypup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8up3m29YkR_KQFJTJeNhqBqk_e08UtgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43481737255:android:f49b11d6a269b4da1c8602",
+        "android_client_info": {
+          "package_name": "com.example.truckmypup2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8up3m29YkR_KQFJTJeNhqBqk_e08UtgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
