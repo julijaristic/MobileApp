@@ -55,7 +55,7 @@ class HomeActivity : AppCompatActivity() , IHomeActivity {
             .replace(R.id.fragmentMainContainer, h)
             .commit()
 
-        findViewById<BottomNavigationView>(R.id.bottomNavigationView).setOnItemSelectedListener { item->
+        /*findViewById<BottomNavigationView>(R.id.bottomNavigationView).setOnItemSelectedListener { item->
             when(item.itemId){
                 R.id.button_home-> {
                     var h = HomeFragment()
@@ -99,7 +99,7 @@ class HomeActivity : AppCompatActivity() , IHomeActivity {
                 }
             }
 
-        }
+        }*/
         findViewById<ImageButton>(R.id.logoutBtn).setOnClickListener{
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(this@HomeActivity, WelcomeActivity::class.java)
@@ -127,13 +127,13 @@ class HomeActivity : AppCompatActivity() , IHomeActivity {
     }
 
     override fun changeToMapAndCenter(ll:LatLng) {
-        var m = MapFragment()
+    /*    var m = MapFragment()
         m.setInitLoc(ll)
         findViewById<BottomNavigationView>(R.id.bottomNavigationView).selectedItemId= R.id.button_map
         supportFragmentManager.beginTransaction()
             .setCustomAnimations(R.anim.slide_in, R.anim.slide_out)
             .replace(R.id.fragmentMainContainer, m)
-            .commit()
+            .commit()*/
     }
 
     override fun backToMain() {

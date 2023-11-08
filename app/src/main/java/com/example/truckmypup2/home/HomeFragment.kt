@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.lifecycle.Observer
 import com.example.truckmypup2.IHomeActivity
 import com.example.truckmypup2.R
 import com.example.truckmypup2.databinding.FragmentHomeBinding
@@ -80,22 +81,22 @@ class HomeFragment : Fragment() , IHome{
 
     override fun setLike(btn: ImageButton,text: TextView) {
         text.text = (text.text.toString().toLong()+1).toString()
-        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_upvote_clicked,requireContext().theme))
+        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.baseline_thumb_up_alt_black_24,requireContext().theme))
     }
 
     override fun setDislike(btn: ImageButton,text: TextView) {
         text.text = (text.text.toString().toLong()+1).toString()
-        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_downvote_clicked,requireContext().theme))
+        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.baseline_thumb_down_black_24,requireContext().theme))
     }
 
     override fun setNormalLike(btn: ImageButton,text: TextView) {
         text.text = (text.text.toString().toLong()-1).toString()
-        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_upvote,requireContext().theme))
+        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.baseline_thumb_up_alt_white_24,requireContext().theme))
     }
 
     override fun setNormalDislike(btn: ImageButton,text: TextView) {
         text.text = (text.text.toString().toLong()-1).toString()
-        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.ic_downvote,requireContext().theme))
+        btn.setImageDrawable(requireContext().resources.getDrawable(R.drawable.baseline_thumb_down_white_24,requireContext().theme))
     }
 
 }
