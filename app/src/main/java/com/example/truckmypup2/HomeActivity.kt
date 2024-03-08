@@ -5,12 +5,9 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
+import com.google.android.gms.maps.model.LatLng
 import com.example.truckmypup2.account.AccountFragment
 import com.example.truckmypup2.addPost.AddPostFragment
 import com.example.truckmypup2.data.DownloadImageTask
@@ -23,7 +20,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.Filter
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.google.type.LatLng
 
 interface IHomeActivity{
     fun logout()
@@ -55,7 +51,7 @@ class HomeActivity : AppCompatActivity() , IHomeActivity {
             .replace(R.id.fragmentMainContainer, h)
             .commit()
 
-        /*findViewById<BottomNavigationView>(R.id.bottomNavigationView).setOnItemSelectedListener { item->
+        findViewById<BottomNavigationView>(R.id.bottomNavigationView).setOnItemSelectedListener { item->
             when(item.itemId){
                 R.id.button_home-> {
                     var h = HomeFragment()
@@ -99,7 +95,7 @@ class HomeActivity : AppCompatActivity() , IHomeActivity {
                 }
             }
 
-        }*/
+        }
         findViewById<ImageButton>(R.id.logoutBtn).setOnClickListener{
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(this@HomeActivity, WelcomeActivity::class.java)
@@ -127,13 +123,13 @@ class HomeActivity : AppCompatActivity() , IHomeActivity {
     }
 
     override fun changeToMapAndCenter(ll:LatLng) {
-    /*    var m = MapFragment()
+        var m = MapFragment()
         m.setInitLoc(ll)
         findViewById<BottomNavigationView>(R.id.bottomNavigationView).selectedItemId= R.id.button_map
         supportFragmentManager.beginTransaction()
             .setCustomAnimations(R.anim.slide_in, R.anim.slide_out)
             .replace(R.id.fragmentMainContainer, m)
-            .commit()*/
+            .commit()
     }
 
     override fun backToMain() {

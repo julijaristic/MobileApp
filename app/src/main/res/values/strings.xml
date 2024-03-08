@@ -16,8 +16,8 @@
 
     <string name="from_device">Slika sa uređaja</string>
     <string name="from_camera">Slikajte</string>
-    <string name="route_login">Logujte se!</string>
-    <string name="route_register">Registrujte se!</string>
+    <string name="route_login">Vrati se na logovanje!</string>
+    <string name="route_register">Registrujte se prvo!</string>
     <string name="login_welcome">Dobrodošli</string>
     <string name="register_welcome">Registrujte se!</string>
     <string name="first_name">Ime</string>
@@ -45,6 +45,7 @@
     <string name="cat">Mačka</string>
     <string name="other">Ostalo</string>
     <string name="all">Sve</string>
+    <string name="post">Dodajte objavu</string>
 
     <string name="postname_hint">Naslov</string>
     <string name="postdesc_hint">Opis</string>

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:id="@+id/button_home"
+        android:icon="@drawable/ic_home"
+        android:fontFamily="@font/averia_libre_light"
+        android:title="@string/home"/>
     <item android:id="@+id/button_map"
         android:icon="@drawable/ic_map"
         android:fontFamily="@font/averia_libre_light"
@@ -9,10 +13,6 @@
         android:icon="@drawable/baseline_add_24"
         android:fontFamily="@font/averia_libre_light"
         android:title="@string/add"/>
-    <item android:id="@+id/button_home"
-        android:icon="@drawable/ic_home"
-        android:fontFamily="@font/averia_libre_light"
-        android:title="@string/home"/>
     <item android:id="@+id/button_rank"
         android:icon="@drawable/baseline_stars_24"
         android:fontFamily="@font/averia_libre_light"

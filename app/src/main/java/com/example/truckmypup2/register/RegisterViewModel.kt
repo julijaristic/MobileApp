@@ -61,6 +61,8 @@ class RegisterViewModel: ViewModel() {
             }.addOnFailureListener() { it ->
                 print(it.message)
             }
+        }.addOnFailureListener() { it ->
+            print(it.message)
         }
     }
     fun register(email: String, password: String, confPassword:String,
