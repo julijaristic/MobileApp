@@ -38,7 +38,7 @@
         android:fontFamily="@font/averia_libre_light"
         android:textColor="@color/black"
         android:text="User"
-        app:layout_constraintStart_toStartOf="@+id/placeType"
+        app:layout_constraintStart_toStartOf="@+id/petsType"
         app:layout_constraintTop_toBottomOf="@+id/postName" />
 
     <TextView
@@ -74,11 +74,11 @@
         android:text="TextView"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/placeType"
+        app:layout_constraintStart_toEndOf="@+id/petsType"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/placeType"
+        android:id="@+id/petsType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

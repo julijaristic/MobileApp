@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RadioButton
-                    android:id="@+id/caffeRB"
+                    android:id="@+id/dogRB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
@@ -56,7 +56,7 @@
                     android:textColor="@color/black" />
 
                 <RadioButton
-                    android:id="@+id/restRB"
+                    android:id="@+id/catRB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"

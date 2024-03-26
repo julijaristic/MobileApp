@@ -84,8 +84,8 @@ class MapFragment : Fragment() {
                                 var v = layoutInflater.inflate(R.layout.home_post, null)
                                 var type: Int = R.drawable.dog
                                 if (clickedMarkerData!!.postType == 1L) type = R.drawable.happy
-                                else if (clickedMarkerData!!.postType >= 3L) type = R.drawable.more_info
-                                v.findViewById<ImageView>(R.id.placeType)
+                                else if (clickedMarkerData!!.postType >= 2L) type = R.drawable.more_info
+                                v.findViewById<ImageView>(R.id.petsType)
                                     .setImageDrawable(
                                         requireContext().resources.getDrawable(
                                             type,

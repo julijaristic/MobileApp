@@ -53,8 +53,8 @@ class HomeFragment : Fragment() , IHome{
             val customView = layoutInflater.inflate(R.layout.home_post, linearLayout, false)
             var type:Int = R.drawable.dog
             if(post.postType==1L) type = R.drawable.happy
-            else if (post.postType==2L) type= R.drawable.more_info
-            customView.findViewById<ImageView>(R.id.placeType).setImageDrawable(requireContext().resources.getDrawable(type,requireContext().theme))
+            else if (post.postType>=2L) type= R.drawable.more_info
+            customView.findViewById<ImageView>(R.id.petsType).setImageDrawable(requireContext().resources.getDrawable(type,requireContext().theme))
             var dTask = DownloadImageTask(customView.findViewById<ImageView>(R.id.placeImage))
             dTask.execute(post.imgUrl)
             customView.findViewById<TextView>(R.id.postName).text = post.postName

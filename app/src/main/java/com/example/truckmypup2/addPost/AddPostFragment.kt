@@ -52,7 +52,7 @@ class AddPostFragment(_callback: IHomeActivity) : Fragment(), IAddPost {
 
     private lateinit var currentLoc: LatLng
 
-    private var placeType:Long = 3
+    private var petsType:Long = 2
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -67,14 +67,14 @@ class AddPostFragment(_callback: IHomeActivity) : Fragment(), IAddPost {
             val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(cameraIntent, CAMERA_REQUEST_CODE)
         }
-        binding.caffeRB.setOnClickListener{
-            placeType=0
+        binding.dogRB.setOnClickListener{
+            petsType=0
         }
-        binding.restRB.setOnClickListener{
-            placeType=1
+        binding.catRB.setOnClickListener{
+            petsType=1
         }
         binding.otherRB.setOnClickListener{
-            placeType=2
+            petsType=2
         }
         return binding.root
     }
@@ -149,7 +149,7 @@ class AddPostFragment(_callback: IHomeActivity) : Fragment(), IAddPost {
                         binding.postNameEdit.text.toString(),
                         binding.postDescEdit.text.toString(),
                         currentLoc,
-                        placeType,
+                        petsType,
                         this
                     )
                 }
@@ -159,7 +159,7 @@ class AddPostFragment(_callback: IHomeActivity) : Fragment(), IAddPost {
                         binding.postNameEdit.text.toString(),
                         binding.postDescEdit.text.toString(),
                         currentLoc,
-                        placeType,
+                        petsType,
                         this
                     )
                 }

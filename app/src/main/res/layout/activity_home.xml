@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/averia_libre_light"
             android:paddingLeft="8dp"
-            android:text="Neko Nekic"
+            android:text="Ime Prezime"
             android:textColor="@color/white"
             android:textSize="18sp"
             tools:layout_editor_absoluteX="40dp"
